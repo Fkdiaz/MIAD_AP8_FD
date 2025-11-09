@@ -29,8 +29,8 @@ jobs:
           name: Deploy to Railway App
           command: |
             cd bankchurn-api
-            railway up --service=striking-abundance
-            railway up --detach
+            railway up --service=striking-abundance --yes || true
+            railway up --detach --yes || true
 
 
 tags_only: &tags_only
